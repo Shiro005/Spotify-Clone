@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+</head>
+<link rel="stylesheet" href="/style.css">
+
+<body>
+  <header>
+    <nav>
+      <h6>Listen On</h6>
+      <h1> <img src="https://cdn-icons-png.flaticon.com/128/2111/2111685.png" alt=""> Spotify</h1>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <div class="player">
+      <div id="songDetails">
+        <img id="songImage"
+          src="https://t3.ftcdn.net/jpg/06/01/59/54/240_F_601595485_1qGuDNKJ5HeyGLBafzHey3NvfP3QzCqH.jpg"
+          alt="Song Image">
+        <div id="songInfo">
+          <h2 id="songTitle">Play the Song</h2>
+          <p id="songArtist">Unknown</p>
+        </div>
+      </div>
+
+      <audio id="audioPlayer" controls></audio>
+
+      <div class="controls">
+        <button id="prevButton" onclick="prevSong()"><img src="https://cdn-icons-png.flaticon.com/128/2/2147.png"
+            alt=""></button>
+        <button id="playButton" onclick="togglePlayPause()">Play</button>
+        <button id="nextButton" onclick="nextSong()"><img src="https://cdn-icons-png.flaticon.com/128/1/1371.png"
+            alt=""></button>
+      </div>
+
+    </div>
+
+    <ul id="songList"></ul>
+  </div>
+
+  <footer>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+
+</html>
